@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+class Earthquake(models.Model):
+    text = models.TextField()
+class Earthquake2(models.Model):
+    text = models.TextField()
+class Earthquake3(models.Model):
+    text = models.TextField()
