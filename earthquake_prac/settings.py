@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6tv0bjyqlg6krv7ng@$iqqc+#&8obl3n&9+u#(v8aa1pa3f^a)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -48,6 +48,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # deploy
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # 追加
 ]
 
 ROOT_URLCONF = 'earthquake_prac.urls'
